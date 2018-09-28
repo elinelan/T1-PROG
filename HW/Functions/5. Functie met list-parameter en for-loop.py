@@ -1,11 +1,12 @@
 def kwadraten_som(grondgetallen):
-    if grondgetallen >= 0:
-        som = sum(grondgetallen ** 2)
-        return som
+    result = 0
+    for getal in grondgetallen:
+        if getal > 0:
+            kwadrant = getal**2
+            result = result + kwadrant
+    return result
 
-grondgetallen = [2,3,5,-2,-3]
-res = kwadraten_som(grondgetallen)
-print(res)
-
+lijst = [2,3,4,-1,-2]
+print( kwadraten_som(lijst))
 
 
